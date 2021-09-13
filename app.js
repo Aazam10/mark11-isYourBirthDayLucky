@@ -21,7 +21,7 @@ function hidemessage(){
 
 function checkIfLucky(){
     hidemessage();
-    if(birthDateRef.value!=="" && luckyNumberRef.value!==""){
+    if(birthDateRef.value!=="" && !(Number(luckyNumberRef.value<=0))){
         var calculatedSumOfDigits=calculateSumOfDigitsInBirthDate();
         var luckyNumber=Number(luckyNumberRef.value);
         if(calculatedSumOfDigits%luckyNumber===0){
@@ -30,6 +30,11 @@ function checkIfLucky(){
         else{
             outputRef.innerText="OOPS!! Your Birthdate Is NOT SO Lucky!"
         }
+    }else if((Number(luckyNumberRef.value<0))){
+        outputRef.innerText="Lucky Number cannot be negative"
+    }
+    else{
+        outputRef.innerText="INPUT FIELDS CANNOT BE EMPTY";
     }
     
     
