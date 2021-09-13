@@ -31,7 +31,7 @@ function checkIfLucky(){
             outputRef.innerText="OOPS!! Your Birthdate Is NOT SO Lucky!"
         }
     }else if((Number(luckyNumberRef.value<0))){
-        outputRef.innerText="Lucky Number cannot be negative"
+        outputRef.innerText="LUCKY NUMBER CANNOT BE NEGATIVE"
     }
     else{
         outputRef.innerText="INPUT FIELDS CANNOT BE EMPTY";
