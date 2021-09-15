@@ -34,7 +34,7 @@ function checkIfLucky(){
         outputRef.innerText="LUCKY NUMBER CANNOT BE NEGATIVE"
     }
     else{
-        outputRef.innerText="INPUT FIELDS CANNOT BE EMPTY";
+        outputRef.innerText="INPUT FIELDS CANNOT BE EMPTY OR Zero";
     }
     
     
